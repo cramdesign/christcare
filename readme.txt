@@ -1,4 +1,3 @@
-This theme was designed Christ Care Pediatrics and Family Medicine and is licenced for their use indefinitely. 
+This theme was designed for my friends at Christ Care Pediatrics and Family Medicine and is licensed for their use indefinitely. 
 
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+The code is built upon open source software and, as such, is itself open source. If you can use something from it, go ahead. 
