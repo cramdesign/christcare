@@ -1,0 +1,63 @@
+
+/* IE 8 and lower doesn't play well with google fonts. Surprise.
+------------------------------------------ */
+
+/*----Open Sans----*/
+@font-face {
+	font-family: 'Open Sans 4';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3fY6323mHUZFJMgTvxaG2iE.eot');
+}
+@font-face {
+	font-family: 'Open Sans 7';
+	font-style: normal;
+	font-weight: 700;
+	src: url('https://themes.googleusercontent.com/static/fonts/opensans/v5/k3k702ZOKiLJc3WVjuplzHZ2MAKAc2x4R1uOSeegc5U.eot');
+}
+@font-face {
+	font-family: 'Open Sans 8';
+	font-style: normal;
+	font-weight: 800;
+	src: url('https://themes.googleusercontent.com/static/fonts/opensans/v5/EInbV5DfGHOiMmvb1Xr-hnZ2MAKAc2x4R1uOSeegc5U.eot');
+}
+@font-face {
+	font-family: 'Open Sans i4';
+	font-style: italic;
+	font-weight: 400;
+	src: url('https://themes.googleusercontent.com/static/fonts/opensans/v5/xjAJXh38I15wypJXxuGMBmfQcKutQXcIrRfyR5jdjY8.eot');
+}
+
+
+/* WP stuff 
+------------------------------------------ */
+
+body {
+	font-family: "Open Sans 4", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Open Sans 8", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+strong, b {
+	font-family: "Open Sans 7", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+	width: inherit; /* fixes ie8 scaling problem */
+}
+
+#quote {
+	font-family: "Open Sans i4", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: italic;
+}
+
+.wp-caption {
+	width: inherit !important; /* scaling issue */
+}
+
+.site-title a {
+	background-size: contain;
+	-ms-behavior: url(ie/backgroundsize.min.htc);
+}

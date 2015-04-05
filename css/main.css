@@ -1,0 +1,774 @@
+
+/* WP stuff 
+------------------------------------------ */
+
+.wp-caption {
+	max-width: 100%;
+	border: 1px solid #ddd;
+	padding: 0.5em;
+	background: #fff;
+	text-align: left;
+}
+
+.wp-caption img {
+	border: none;
+	
+}
+
+.wp-caption-text {
+	font-size: 0.85em;
+	line-height: 1.4;
+	margin: 0.5em 0;
+}
+
+
+
+/* Color boxes 
+------------------------------------------ */
+
+body {
+	background: #fff;
+	color: #555;
+}
+
+a {
+	color: #d74b4b;
+}
+
+#header {
+}
+
+#content {
+}
+
+#footer {
+}
+
+
+
+/* Header 
+------------------------------------------ */
+
+#header {
+	line-height: 1.2;
+	padding: 3em 0;
+}
+
+#header a {
+	color: #333;
+}
+
+#header .row {
+}
+
+.site-title, .site-description {
+	margin: 0;
+}
+
+.site-title {
+	font-size: 2.5em;
+}
+
+.site-title a {
+	text-indent: -999em;
+	background: url(images/ccp-logo.png) no-repeat center;
+	display: block;
+	width: 100%;
+	height: 150px;
+	background-size: contain;
+}
+
+.site-description {
+	opacity: 0.6;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+@media (max-width: 900px) {
+
+	#header {
+		padding-bottom: 0;
+		text-align: center;
+	}
+	
+	#header .row {
+		width: auto;
+	}
+	
+	#menu {
+		padding: 2em 0;
+	}
+	
+	.site-title a {
+		height: 120px;
+	}
+	
+}
+
+@media (min-width: 900px) {
+	
+	#masthead {
+		float: left;
+		width: 30%;
+	}
+	
+	#menu {
+		float: left;
+		width: 70%;
+		padding: 1em 0;
+		text-align: right;
+	}
+
+}
+
+
+
+/* Frontpage Hero
+------------------------------------------ */
+
+#hero .primary {
+	padding: 0;
+	background-size: cover;
+	background-position: center top;
+}
+
+#hero .primary img {
+	visibility: hidden;
+}
+
+#hero .secondary {
+	margin: 0;
+	background: #4d463d;
+	color: #eaa241;
+}
+
+#hero .secondary p {
+	color: white;
+}
+
+
+
+
+/* Featured images 
+------------------------------------------ */
+
+#banner img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.banner {
+}
+
+.feature img {
+	display: block;
+	margin: 0 auto;
+}
+
+.feature + header {
+	margin-top: 2em;
+}
+
+/* quote 
+------------------------------------------ */
+
+#quote {
+	background: #eaa241;
+	text-align: center;
+	font-style: italic;
+	padding: 1em 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	box-shadow: inset 0 0 3em rgba(0,0,0,0.15);
+}
+
+@media (min-width: 800px) {
+
+	#quote {
+		padding: 2em 0;
+	}
+
+	#quote .row {
+		font-size: 1.5em;
+		line-height: 1.5;
+	}
+}
+
+
+/* Content 
+------------------------------------------ */
+
+#content {
+	background: #f2f2f2;
+	position: relative;
+}
+
+#content > .row {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+@media (max-width: 900px) {
+	
+	#content > .row {
+		padding-top: 6%;
+		padding-bottom: 6%;
+	}
+
+}
+
+#content > header {
+	background: #ddd;
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+#content img,
+#content iframe {
+	border: 1px solid #ddd;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+#content p {
+	max-width: 60em;
+}
+
+.single article,
+.page article {
+ 	max-width: 52em;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+
+
+.post .meta {
+	margin: 1em 0;
+}
+
+.post .meta p {
+	text-transform: uppercase;
+	font-size: 80%;
+	margin: 0;
+}
+
+@media (min-width: 600px) {
+
+	.post .meta p {
+		display: inline-block;
+	}
+
+	.post .meta p + p {
+		margin-left: 0.5em;
+		border-left: 1px solid #888;
+		padding-left: 0.75em;
+	}
+
+}
+
+#content .post + .post {
+/*
+	margin-top: 2em;
+	padding-top: 2em;
+*/
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.post .title {
+	margin-top: 0;
+}
+
+
+.singular .entry-title,
+.archive .category-title {
+	font-size: 4em;
+	margin: 0;
+}
+
+.singular .hentry header {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+
+
+
+
+
+/* sidebar 
+------------------------------------------ */
+
+.sidebar {
+	overflow: hidden;
+}
+
+.sidebar > article, .sidebar > aside {
+	position: relative;
+	padding: 3em;
+	background: #eee;
+}
+
+.sidebar > aside {
+	font-size: 90%;
+	background: #ddd;
+}
+
+@media (min-width: 700px) {
+
+	.sidebar {
+		display: table;
+		width: 100%;
+	}
+	
+	.sidebar > article, .sidebar > aside {
+		display: table-cell;
+		vertical-align: top;
+	}
+	
+	.sidebar > article {
+		width: 70%;
+	}
+	
+}
+
+@media (max-width: 700px) {
+	
+	.sidebar > aside {
+		border-top: 1px solid rgba(0,0,0,0.1);
+	}
+	
+}
+
+
+
+/* sidebar row 
+------------------------------------------ */
+
+.sidebar.row > article, .sidebar.row > aside {
+	position: relative;
+}
+
+#content .sidebar.row {
+	width: auto;
+	max-width: none;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+@media (min-width: 700px) {
+	
+	.sidebar.row > article {
+		width: 70%;
+		max-width: none;
+		float: left;
+		padding-right: 3em;
+	}
+	
+	.sidebar.row.alt > article {
+		float: right;
+		padding-left: 3em;
+		padding-right: 0;
+	}
+	
+	.sidebar.row > aside {
+		overflow: hidden;
+		font-size: 90%;
+		padding-left: 3em;
+	}
+	
+	.sidebar.row.alt > aside {
+		padding-right: 3em;
+		padding-left: 0;
+	}
+	
+	#content .sidebar.row:before {
+		display: block;
+		content: "";
+		background: #ddd;
+		position: absolute;
+		width: 44%;
+		left: 58.8%;
+		left: 67.6%;
+		top: 0;
+		bottom: 0;
+	}
+	
+}
+
+@media (min-width: 900px) {
+	
+	.sidebar.row > article {
+		width: 70%;
+	}
+	
+	#content .sidebar.row:before {
+		left: 67.6%;
+	}
+	
+}
+
+@media (max-width: 700px) {
+	
+	.sidebar.row > aside {
+		margin-top: 2em;
+		border-top: 1px solid rgba(0,0,0,0.1);
+		padding-top: 2em;
+	}
+	
+}
+
+
+
+
+/* features 
+------------------------------------------ */
+
+#features {
+	background: #555D5A;
+	color: #fff;
+	padding: 4em 0;
+}
+
+#features .grid {
+	z-index: 1;
+}
+
+#features .intro {
+	color: orange;
+}
+
+#earnest, #wander {
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+#earnest:before, #wander:before {
+	display: inline-block;
+	content: "";
+	width: 140px;
+	height: 140px;
+	background: url(images/earnest-square.jpg) no-repeat center;
+	border-radius: 50%;
+	border: 4px solid white;
+	background-size: cover;
+}
+
+#wander:before {
+	background-image: url(images/wander-square.jpg);
+}
+
+@media (min-width: 900px) {
+
+	#features .grid:before {
+		display: block;
+		content: "";
+		width: 33.333%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 33.333%;
+		border: 1px solid #777;
+		border: 1px solid rgba(255,255,255,0.1);
+		border-width: 0 1px;
+		z-index: -1;
+	}
+
+}
+
+@media (max-width: 900px) {
+	
+	#features .grid .intro {
+		width: 100%;
+	}
+	
+	#features .grid .item {
+		clear: none;
+	}
+	
+}
+
+
+
+/* footer 
+------------------------------------------ */
+
+#footer {
+	padding: 2em 0;
+	text-align: center;
+
+	background: #333;
+	color: #eee;
+
+	text-transform: uppercase;
+	font-size: 0.8em;
+	vertical-align: bottom;
+}
+
+#footer a:hover, #footer li:hover {
+	background: transparent;
+	color: #fff;
+}
+
+#footer .menu li {
+	display: inline-block;
+}
+
+@media (min-width: 900px) {
+
+	#footer p, #footer nav {
+		display: inline-block;
+		margin: 0 1em;
+	}
+	
+}
+
+@media (min-width: 1300px) {
+
+	#footer {
+		margin-bottom: 3em;
+	}
+	
+}
+
+
+/* Slats 
+-------------------------------------------------------------- */
+
+.slats {
+	overflow: hidden;
+}
+
+.slats .item, .slat {
+	padding: 1em;
+	margin: 0 -1em;
+}
+
+.slats .item figure img,
+.slat figure img {
+	width: 100%;
+}
+
+@media (min-width:480px) {
+
+	.slats .item,
+	.slat {
+		padding: 2em;
+		margin: 0 -2em;
+		overflow: hidden;
+	}
+	
+	.slats .item figure,
+	.slat figure {
+		float: left;
+		width: 45%;
+		margin-right: 2em;
+	}
+	
+	.slats .item article,
+	.slat article {
+		padding-top: 0;
+		overflow: hidden;
+		max-width: none;
+	}
+	
+	.slats .item article:first-child,
+	.slat article:first-child {
+		background: #fafafa;
+		border-bottom: 1px solid #ddd;
+		padding: 2em;
+	}
+	
+}/* end @media */
+
+@media (min-width: 600px) {
+
+	.slats .item figure,
+	.slat figure {
+		width: 30%;
+		margin-right: 3em;
+	}
+	
+}/* end @media */
+
+
+
+/* misc 
+------------------------------------------ */
+
+.blogroll {
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.blogroll li {
+	line-height: 1.4;
+	margin: 2em 0;
+}
+
+.link-title {
+	margin: 0;
+}
+
+.link-category-title {
+	margin-top: 2em;
+	border-top: 1px solid #ddd;
+	border-top: 1px solid rgba(0,0,0,0.2);
+	padding-top: 2em;
+}
+
+.moretag {
+	white-space: nowrap;
+}
+
+
+/* widgets 
+------------------------------------------ */
+
+.widget + .widget {
+	margin-top: 2em;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-top: 2em;
+}
+
+.widget_calendar th, .widget_calendar td {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+
+
+/* customize the menu 
+	see menu.css for basic styles
+------------------------------------------ */
+
+.menu {
+	font-weight: bold;
+}
+
+.menu a {
+	padding: 0.5em 1em;
+	white-space: nowrap;
+}
+
+.menu li ul {
+	font-weight: normal;
+}
+
+@media (min-width:800px) {
+
+	.menu li ul {
+		border-top: 1px solid #ccc;
+		background: none;
+	}
+
+	.menu > li + li {
+		margin-left: 1em;
+	}
+	
+}
+
+
+
+/* sectionmenu
+-------------------------------------------------------------- */
+
+.sectionmenu {
+	margin: 2em 0;
+	font-size: 0.875em;
+}
+
+@media ( min-width: 720px ) {
+	
+	.sectionmenu {
+		float: right;
+		margin-left: 4em;
+		margin-top: 0;
+		margin-bottom: 2em;
+		max-width: 18em;
+	}
+	
+}
+
+.sectionmenu ul li {
+	float: none;
+	display: block;
+	margin: 0;
+	margin-bottom: 1px;
+}
+
+.sectionmenu ul li a {
+	display: block;
+	color: #999;
+	padding: 0.75em 1em;
+	background: #ddd;
+}
+
+.sectionmenu ul li:first-child a {
+	background: #aaa;
+	color: #fff;
+	font-weight: bold;
+}
+
+.sectionmenu ul li.current_page_item a {
+	background: #ccc;
+	color: #777;
+}
+
+
+
+/* post navigation
+-------------------------------------------------------------- */
+.postnav {
+	margin-top: 4em;
+	font-size: 0.75em;
+	border-top: 1px solid #ddd;
+	padding: 2em 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.postnav .page-numbers {
+	padding: 0.5em 0.75em;
+	border: 1px solid #ddd;
+}
+
+.postnav .page-numbers + .page-numbers {
+	margin-left: 0.5em;
+}
+
+.postnav .current {
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+
+.postnav .prev, .postnav .next {
+	border: none;
+	padding: 0.5em 0;
+}
+
+
+
+
+/* Comments 
+------------------------------------------ */
+
+#comments-wrap {
+	padding: 4em 0;
+	background: #f0eee8;
+	border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#comments-wrap .row {
+/* 	max-width: 52em; */
+	margin: 0 auto;
+	overflow: hidden;
+}
+

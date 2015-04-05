@@ -1,0 +1,292 @@
+/* font imports
+------------------------------------------ */
+
+@font-face {
+	font-family: 'Genericons';
+	font-weight: normal;
+	font-style:  normal;
+
+	src: url('fonts/genericons/genericons-regular-webfont.eot');
+	src: url('fonts/genericons/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/genericons/genericons-regular-webfont.woff') format('woff'),
+	     url('fonts/genericons/genericons-regular-webfont.ttf') format('truetype'),
+	     url('fonts/genericons/genericons-regular-webfont.svg#genericonsregular') format('svg');
+}
+
+
+
+/* debug colors 
+------------------------------------------ */
+.debug .row {
+	background-color: lightpink;
+	background-color: rgba(255,0,0,0.05);
+	box-shadow: inset 0 0 0 1px rgba(255,0,0,0.15);
+}
+.debug .item, .debug aside, .debug section {
+	box-shadow: inset 0 0 0 1px rgba(0,255,0,0.15);
+}
+.debug .grid {
+	box-shadow: inset 0 0 0 1px rgba(0,255,0,0.15);
+}
+
+.admin-only {
+	display: none;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 1em;
+	border: 1px solid #555;
+	background: #aaa;
+	color: #333;
+	opacity: 0.5;
+}
+
+.logged-in .admin-only {
+	display: block;
+}
+
+
+/* setup
+------------------------------------------ */
+
+/* universal box-sizing */
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* define and set horizontal bands */
+.row, .wrap {
+	max-width: 1040px;
+	width: 88%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.wrap {
+	max-width: 1300px;
+	width: auto;
+	overflow-x: hidden;
+}
+
+/* nested rows should fill container */
+.row .row {
+	width: auto;
+}
+
+/* contain and clear floated elements inside certain elements */
+.row:before, .row:after,
+.grid:before, .grid:after,
+.wrap:before, .wrap:after,
+.clear:before, .clear:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+
+
+/* Simple Resposive Grid 
+-------------------------------------------------------------- */
+
+.grid {
+	margin: 0;
+	position: relative;
+}
+
+.grid .item {
+	padding: 1em 0;
+}
+
+.grid .item figure img {
+	width: 100%;
+}
+
+.grid .item > a {
+	display: block;
+}
+
+@media (min-width:600px) {
+
+	.grid {
+		margin: 0 -2em;
+	}
+
+	.grid .item {
+		width: 50%;
+		padding: 2em;
+		float: left;
+	}
+	
+}/* end @media */
+
+@media (min-width:600px) and (max-width:900px) {
+
+	.grid .item:nth-child(2n+1) {
+		clear: left;
+	}
+	
+}/* end @media */
+
+@media (min-width:900px) {
+
+	.grid.two {
+		margin: 0 -3em;
+	}
+	
+	.grid.two .item {
+		width: 50%;
+		padding: 2em 3em;
+	}
+
+	.grid.three .item {
+		width: 33.333%;
+	}
+	
+	.grid.four .item {
+		width: 25%;
+	}
+	
+	.grid.five .item {
+		width: 20%;
+	}
+	
+	.grid.six .item {
+		width: 16.666%;
+	}
+	
+	.grid.two .item:nth-child(2n+1),
+	.grid.three .item:nth-child(3n+1),
+	.grid.four .item:nth-child(4n+1),
+	.grid.five .item:nth-child(5n+1),
+	.grid.six .item:nth-child(6n+1){
+		clear: left;
+	}
+	
+}/* end @media */
+
+
+
+/* WordPress Gallery 
+------------------------------------------ */
+
+.gallery {
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+}
+
+.gallery:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+.gallery-item {
+	margin: 0;
+	float: left;
+	padding: 0.5em;
+}
+
+.gallery-item img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+.gallery-columns-1 .gallery-item {
+    width: 100%;
+    float: none;
+}
+.gallery-columns-2 .gallery-item {
+    width: 50%
+}
+.gallery-columns-3 .gallery-item {
+    width: 33.3333%
+}
+.gallery-columns-4 .gallery-item {
+    width: 25%
+}
+.gallery-columns-5 .gallery-item {
+    width: 20%
+}
+.gallery-columns-6 .gallery-item {
+    width: 16.6667%
+}
+.gallery-columns-7 .gallery-item {
+    width: 14.2857%
+}
+.gallery-columns-8 .gallery-item {
+    width: 12.5%
+}
+.gallery-columns-9 .gallery-item {
+    width: 11.1111%
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n+1),
+.gallery-columns-3 .gallery-item:nth-child(3n+1),
+.gallery-columns-4 .gallery-item:nth-child(4n+1),
+.gallery-columns-5 .gallery-item:nth-child(5n+1),
+.gallery-columns-6 .gallery-item:nth-child(6n+1),
+.gallery-columns-7 .gallery-item:nth-child(7n+1),
+.gallery-columns-8 .gallery-item:nth-child(8n+1),
+.gallery-columns-9 .gallery-item:nth-child(9n+1) {
+	clear: left;
+}
+
+
+
+/* Social menu 
+------------------------------------------ */
+
+#menu-social li {
+	vertical-align: inherit;
+}
+
+#menu-social li + li {
+	margin-left: 1em;
+}
+
+#menu-social li a:before {
+
+	display:        inline-block;
+	font-family:    'Genericons';
+	font-size:      24px;
+	font-style:     normal;
+	font-weight:    normal;
+	font-variant:   normal;
+	line-height:    1;
+	vertical-align: middle;
+
+	-webkit-font-smoothing: antialiased;
+
+}
+
+#menu-social li a:before        { content: '\f408'; padding: 0 4px 0 0; }
+
+#menu-social li a[href*="wordpress.org"]:before,
+#menu-social li a[href*="wordpress.com"]:before   { content: '\f205'; color: #21759b; }
+#menu-social li a[href*="codepen.io"]:before      { content: '\f216'; color: #999999; }
+#menu-social li a[href*="digg.com"]:before        { content: '\f221'; color: #999999; }
+#menu-social li a[href*="dribbble.com"]:before    { content: '\f201'; color: #ea4c89; }
+#menu-social li a[href*="facebook.com"]:before    { content: '\f203'; color: #3b5998; }
+#menu-social li a[href*="flickr.com"]:before      { content: '\f211'; color: #ff0084; }
+#menu-social li a[href*="plus.google.com"]:before { content: '\f206'; color: #dd4b39; }
+#menu-social li a[href*="github.com"]:before      { content: '\f200'; color: #4183c4; }
+#menu-social li a[href*="instagram.com"]:before   { content: '\f215'; color: #3f729b; }
+#menu-social li a[href*="linkedin.com"]:before    { content: '\f208'; color: #0e76a8; }
+#menu-social li a[href*="pinterest.com"]:before   { content: '\f210'; color: #c8232c; }
+#menu-social li a[href*="polldaddy.com"]:before   { content: '\f217'; color: #bc0b0b; }
+#menu-social li a[href*="getpocket.com"]:before   { content: '\f224'; color: #ee4056; }
+#menu-social li a[href*="reddit.com"]:before      { content: '\f222'; color: #336699; }
+#menu-social li a[href*="skype.com"]:before,
+#menu-social li a[href*="skype:"]:before          { content: '\f220'; color: #00aff0; }
+#menu-social li a[href*="stumbleupon.com"]:before { content: '\f223'; color: #ff2618; }
+#menu-social li a[href*="tumblr.com"]:before      { content: '\f214'; color: #34526f; }
+#menu-social li a[href*="twitter.com"]:before     { content: '\f202'; color: #33ccff; }
+#menu-social li a[href*="vimeo.com"]:before       { content: '\f212'; color: #1AB7EA; }
+#menu-social li a[href*="youtube.com"]:before     { content: '\f213'; color: #c4302b; }
+
+#footer #menu-social li a:before { color: #fff; }
+#footer #menu-social li a:hover:before  { color: #d74b4b; }
+
+
