@@ -14,7 +14,7 @@
 
 				endwhile; endif;
 
-				get_template_part( 'inc/pagination' );
+				the_posts_pagination( array( 'mid_size' => 2, 'prev_text' => 'Prev', 'next_text' => 'Next' ) );
 
 			?>
 

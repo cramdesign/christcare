@@ -4,20 +4,20 @@
 
 <?php
 
-if ( class_exists( 'WPFeaturedImgCategories' ) ) :
-
-	$term_id = get_query_var('cat');
-	$thumbnail_id = get_option( '_wpfifc_taxonomy_term_'.$term_id.'_thumbnail_id_', 0 );
+	if ( class_exists( 'WPFeaturedImgCategories' ) ) :
 	
-	if ( $thumbnail_id > 0 ) {
+		$term_id = get_query_var('cat');
+		$thumbnail_id = get_option( '_wpfifc_taxonomy_term_'.$term_id.'_thumbnail_id_', 0 );
 		
-		$image = wp_get_attachment_image_src( $thumbnail_id, "large" );
-		$banner = '<figure id="banner" class="feature"><img src="' . $image[0] . '"></figure>';
-		echo( $banner );
-					
-	}
-	
-endif;
+		if ( $thumbnail_id > 0 ) {
+			
+			$image = wp_get_attachment_image_src( $thumbnail_id, "large" );
+			$banner = '<figure id="banner" class="feature"><img src="' . $image[0] . '"></figure>';
+			echo( $banner );
+						
+		}
+		
+	endif;
 
 ?>
 
