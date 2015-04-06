@@ -723,40 +723,6 @@ a {
 
 
 
-/* post navigation
--------------------------------------------------------------- */
-.postnav {
-	margin-top: 4em;
-	font-size: 0.75em;
-	border-top: 1px solid #ddd;
-	padding: 2em 0;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.postnav .page-numbers {
-	padding: 0.5em 0.75em;
-	border: 1px solid #ddd;
-}
-
-.postnav .page-numbers + .page-numbers {
-	margin-left: 0.5em;
-}
-
-.postnav .current {
-	border: 1px solid #ccc;
-	background-color: #eee;
-}
-
-.postnav .prev, .postnav .next {
-	border: none;
-	padding: 0.5em 0;
-}
-
-
-
-
 /* Comments 
 ------------------------------------------ */
 

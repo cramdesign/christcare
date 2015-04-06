@@ -87,6 +87,38 @@
 
 
 
+/* post navigation
+-------------------------------------------------------------- */
+
+.nav-links {
+	font-size: 0.75em;
+	padding: 3em 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.nav-links .page-numbers {
+	padding: 0.5em 0.75em;
+	border: 1px solid #ddd;
+}
+
+.nav-links .page-numbers + .page-numbers {
+	margin-left: 0.5em;
+}
+
+.nav-links .current {
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+
+.nav-links .prev, .nav-links .next {
+	border: none;
+	padding: 0.5em 0;
+}
+
+
+
 /* Simple Resposive Grid 
 -------------------------------------------------------------- */
 
