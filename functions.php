@@ -125,16 +125,20 @@ add_action( 'login_enqueue_scripts', 'login_scripts', 5 );
 /* custom menu walker
 -------------------------------------------------------------- */
 class MV_Cleaner_Walker_Nav_Menu extends Walker {
+	
     var $tree_type = array( 'post_type', 'taxonomy', 'custom' );
     var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
+    
     function start_lvl(&$output, $depth) {
         $indent = str_repeat("\t", $depth);
         $output .= "\n$indent<ul class=\"sub-menu\">\n";
     }
+    
     function end_lvl(&$output, $depth) {
         $indent = str_repeat("\t", $depth);
         $output .= "$indent</ul>\n";
     }
+    
     function start_el(&$output, $item, $depth, $args) {
         global $wp_query;
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -157,9 +161,11 @@ class MV_Cleaner_Walker_Nav_Menu extends Walker {
         $item_output .= $args->after;
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
     }
+    
     function end_el(&$output, $item, $depth) {
         $output .= "</li>\n";
     }
+    
 }
 
 

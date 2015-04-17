@@ -1,10 +1,6 @@
 <?php 
 	
-/* 
-	
-	Template Name: Front Page with Options 
-	
-*/
+// Template Name: Front Page with Options
 
 get_header(); 
 
