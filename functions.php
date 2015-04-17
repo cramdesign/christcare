@@ -62,7 +62,7 @@ add_action( 'after_setup_theme', 'custom_theme_features' );
 function custom_theme_widgets() {
 
 
-	register_sidebar(array(
+	register_sidebar( array(
 		'name'			=> 'Sidebar Widgets',
 		'id'			=> 'sidebar',
 		'description'	=> 'These are widgets for all sidebars.',

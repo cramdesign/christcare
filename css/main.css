@@ -152,7 +152,7 @@ a {
 /* Featured images 
 ------------------------------------------ */
 
-#banner img {
+.banner img {
 	width: 100%;
 	vertical-align: bottom;
 }

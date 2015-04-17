@@ -24,7 +24,7 @@
 									the_title( '<h1 class="entry-title">', '</h1>' );
 									
 									// only single and blog pages need meta data
-									if ( is_single() or is_home() ) get_template_part( 'metadata' );
+									if ( is_single() or is_home() ) get_template_part( 'inc/metadata' );
 								
 								?>
 								
