@@ -123,7 +123,6 @@ add_action( 'login_enqueue_scripts', 'login_scripts', 5 );
 
 
 /* custom menu walker
--------------------------------------------------------------- */
 class MV_Cleaner_Walker_Nav_Menu extends Walker {
 	
     var $tree_type = array( 'post_type', 'taxonomy', 'custom' );
@@ -167,6 +166,7 @@ class MV_Cleaner_Walker_Nav_Menu extends Walker {
     }
     
 }
+-------------------------------------------------------------- */
 
 
 

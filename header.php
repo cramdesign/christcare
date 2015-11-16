@@ -34,7 +34,7 @@
 	<nav id="menu">
 		<input type="checkbox" id="menu-toggle" class="toggle">
 		<label for="menu-toggle" class="toggle">Menu</label>
-		<?php wp_nav_menu( array( 'walker' => new MV_Cleaner_Walker_Nav_Menu(), 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'menu target' )); ?>
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'menu target' )); ?>
 	</nav>
 	
 </div><!-- row -->
